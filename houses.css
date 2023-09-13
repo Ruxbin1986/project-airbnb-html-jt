@@ -1,0 +1,13 @@
+.topBar {
+    display:grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+}
+
+.profileButtons {
+    display: inline;
+}
+
+#logo {
+    width: 100px;
+}

@@ -17,12 +17,20 @@
       .header {
         background-color: blueviolet;
       }
-      nav {
-        background-color: pink;
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+      .profile {
+        background-color: red;
+      }
+      .listings {
+        background-color: orange;
       }
     </style>
 </head>
 <body>
+  <div class="main">
     <div class="header">
       <nav class="navbar navbartop bg-body-tertiary">
         <!-- <div class="container-fluid"> -->
@@ -35,7 +43,39 @@
         </div>
       </nav>
     </div>
-    <div class="main">
+    <div class="row gx-10">
+      <div class="col-4">
+        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        
+        <select class="form-select form-select-sm" aria-label="Small select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="col-8">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="..." class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 </html>

@@ -30,7 +30,33 @@
       nav {
         background-color: pink;
       }
-      
+
+      .card {
+      }
+
+      .houseInfo {
+        background-color: aqua;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .houseInfo {
+        background-color: coral;
+      }
+
+      .bookingForm {
+        background-color: cornflowerblue;
+      }
+
+      .bookingForm .card {
+        right: 0;
+ position: absolute;
+ padding: 0 20px 0 0 0;
+      }
+
     </style>
   </head>
   <body>
@@ -46,7 +72,7 @@
       </nav>
       <div class="content">
         <img src="images/house1/house_01_01.png" alt="mainHousePic" class="mainPic">
-        <div class="row row-cols-1 row-cols-md-3 gx-3 gy-3 gallery">
+        <div class="row row-cols-1 row-cols-md-3 gx-3 px-3 gy-3 gallery">
           <div class="col">
             <div class="card">
               <img src="images/house1/house_01_01.png" class="card-img-top" alt="...">
@@ -94,21 +120,32 @@
           </div>
         </div>
       </div>
-      <div>
-        <h1 class="display-6">Luxury Villa in Chaweng</h1>
-      <span>Koh Samui</span> <span>●</span> <span>4 Rooms</span>
-      </div>
-      <div>
-        <img src="images/avatar.jpeg"> 
-        <figure>
-          <figcaption class="blockquote-footer">
-            Hosted by<cite title="Source Title">Ted B</cite>
-          </figcaption>
-          <blockquote class="blockquote">
-            <p>A well-known quote, contained in a blockquote element.</p>
-          </blockquote>
-        </figure>
-      </div>
+      <div class="grid-container">
+
+        <div class="grid-child houseInfo">
+            <h1>Luxury Villa Chaweng</h1>
+            <span>Koh Samui</span> <span>•</span> <span>4 Rooms</span>
+
+            <p>Stylish, tropical, luxurious, airy and absolute stunning view over the bay of Chaweng Beach, this villa combines form and function, enjoying magnificent views of Samui's small islands and the sea beyond. With 520sam of indoor/outdoor living space with 7 ensuite bedrooms. large living area. infinitv pool. garden. air conditioned gym, professional pool table, bbq and Sala, this villa is perfect for up to 14 adults With 260sqm
+              (2798sqfeet) of living space and 260sqm of outdoor space.</p>
+        </div>
+    
+        <div class="grid-child bookingForm">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">$350/night</h5>
+              <p class="card-text">0 Reviews</p>
+              <div class="mb-3">
+                <form>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Send the host a message..."></textarea>
+              </div>
+              <button class="btn btn-primary">Request Booking</button>
+            </div>
+            <div class="Reviews">
+              
+            </div>
+          </div>
+        </div>
     </div>
   </body>
 </html>

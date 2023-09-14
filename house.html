@@ -16,7 +16,15 @@
 
       .content {
         display: grid;
-        grid-template-columns: 50% auto;
+        grid-template-columns: 50% auto 2%;
+        align-items: center;
+      }
+      .gallery {
+        margin: 0 0 0 10px;
+      }
+
+      .card img {
+        width: 200px;
       }
 
 
@@ -25,7 +33,8 @@
   <body>
     <div class="wrap">
       <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
+        <!-- <div class="container-fluid"> -->
+          <div class="container-fluid">
           <img src="images/logo-airbnb.png" alt="Logo" width="100" class="d-inline-block align-text-top">
           <form class="d-flex" role="search">
             <button class="btn btn-outline-success me-2" type="button">Jimmy</button>
@@ -35,7 +44,7 @@
       </nav>
       <div class="content">
         <img src="images/house1/house_01_01.png" alt="mainHousePic" class="mainPic">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 gx-3 gy-3 gallery">
           <div class="col">
             <div class="card">
               <img src="images/house1/house_01_01.png" class="card-img-top" alt="...">
@@ -82,6 +91,21 @@
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <h1 class="display-6">Luxury Villa in Chaweng</h1>
+      <span>Koh Samui</span> <span>●</span> <span>4 Rooms</span>
+      </div>
+      <div>
+        <img src="images/avatar.jpeg"> 
+        <figure>
+          <figcaption class="blockquote-footer">
+            Hosted by<cite title="Source Title">Ted B</cite>
+          </figcaption>
+          <blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+          </blockquote>
+        </figure>
       </div>
     </div>
   </body>

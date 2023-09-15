@@ -11,17 +11,9 @@
       crossorigin="anonymous">
     <style>
       .main {
-        background-color: blue;
         padding: 20px;
       }
-      .header {
-        background-color: blueviolet;
-      }
-      nav {
-        background-color: pink;
-      }
       .navbar1 {
-        background-color: red;
         padding: 5px 105px 5px 20px;
       }
       .navbartop {
@@ -33,51 +25,36 @@
     </style>
 </head>
 <body>
-  <div class="header">
-    <nav class="navbar navbartop bg-body-tertiary g-0">
-      <div class="container">
-        <img src="images/logo-airbnb.png" alt="Logo" width="100" class="d-inline align-text-top">
-        <form class="d-flex" role="search">
-          <button class="d-block btn btn-outline-success me-2" type="button">Jimmy</button>
-          <button class="d-block btn btn-outline-success" type="button">Logout</button>
-        </form>
-      </div>
-    </nav>
-  </div>
-      <nav class="navbar navbar1 navbar-expand-lg bg-body-tertiary">
+    <div class="header">
+      <nav class="navbar navbartop bg-body-tertiary">
+        <!-- <div class="container-fluid"> -->
+          <div class="container-fluid">
+          <img src="images/logo-airbnb.png" alt="Logo" width="100" class="d-inline-block align-text-top">
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-success me-2" type="button">Jimmy</button>
+            <button class="btn btn-outline-success me-2" type="button">Logout</button>
+          </form>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <form>
-                <select class="Locations Options">
-                  <option>Any Location</option>
-                  <option>Koh Phangan</option>
-                  <option>Koh Samui</option>
-                  <option>Bali</option>
-                </select>
-                <select class="Rooms Options">
-                  <option>Any Rooms</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-                <input type="number" placeholder="Max Price" class="Options">
-                <select class="SortPrice" class="Options">
-                  <option>Price (low to high)</option>
-                  <option>Price (High to Low)</option>
-                </select>
-              </form>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+          <a class="navbar-brand" href="#"></a>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Any location</option>
+            <option value="1">Ko Samui</option>
+            <option value="2">Koh Phangan</option>
+            <option value="3">Bali</option>
+          </select>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Any Rooms</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="House Name..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
       </nav>
     </div>

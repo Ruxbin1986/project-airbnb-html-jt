@@ -37,24 +37,41 @@
         </div>
       </nav>
       <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Any location</option>
-            <option value="1">Ko Samui</option>
-            <option value="2">Koh Phangan</option>
-            <option value="3">Bali</option>
-          </select>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Any Rooms</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="House Name..." aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        <div class="container text-center">
+          <div class="row row-cols-auto">
+            <div class="col">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Any location</option>
+                <option value="1">Ko Samui</option>
+                <option value="2">Koh Phangan</option>
+                <option value="3">Bali</option>
+              </select>
+            </div>
+            <div class="col">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Any Rooms</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+              </select>
+            </div>
+            <div class="col">
+              <div class="mb-0">
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Max Price">
+              </div>
+            </div>
+            <div class="col">
+              <div class="mb-0">
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Low to High">
+              </div>
+            </div>
+            <div class="col">          
+              <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="House Name..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form></div>
+          </div>
         </div>
       </nav>
     </div>

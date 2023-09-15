@@ -22,7 +22,7 @@
         min-height: 100px;
         border: 2px solid blue;
       }
-      .content {
+      .mycontent {
         background-color: lightpink;
         min-height: 100px;
         border: 2px solid red;
@@ -49,6 +49,7 @@
     </style>
   </head>
   <body>
+    <!-- Navbar -->
     <div class="header">
       <nav class="navbar navbartop bg-body-tertiary g-0">
         <div class="container">
@@ -60,15 +61,16 @@
         </div>
       </nav>
     </div>
-    <div class="container-fluid content"> 
-      <div class="row row-cols-2 gy-3">
-        <div class="col">
+    <!-- photo div -->
+    <div class=" mycontent ps-0"> 
+      <div class="row row-cols-2">
+        <div class="col m-0">
           <div class="box">
             <img src="images/house1/house_01_01.png" class="img-fluid" />
           </div> 
         </div>
-        <div class="col">
-          <div class="row row-cols-3 gy-3">
+        <div class="col p-3">
+          <div class="row row-cols-3">
             <div class="col">
               <div class="gallery">
                 <img src="images/house1/house_01_01.png" class="img-fluid" />
@@ -118,33 +120,55 @@
         </div>
       </div>
     </div>
+    <!-- info/description/reviews -->
     <div class="container-fluid info">
-      <div class="row row-cols-2 gy-3">
-        <div class="col">
-          <div class="container-fluid infoContent" >
-
-          </div>
-
-          <!-- <div class="box">
-            <h1 class="display-6"><strong>Luxury Villa Chaweng</strong></h1>
-            <span><small>Koh Samui</small></span> <span><small>•</small></span> <span><small>4 Rooms</small></span> -->
-
-          </div>
+      <div class="row row-cols-2">
+        <div class="col-7 reviews">
+          <h1 class="display-6"><strong>Luxury Villa Chaweng</strong></h1>
+            <span><small>Koh Samui</small></span> <span><small>•</small></span> <span><small>4 Rooms</small></span>
+            <div class="row row-cols-2">
+              <div class="col-2">
+                <img src="images/avatar.jpeg" class="rounded-circle" style="width: 75px;" />
+              </div>
+              <div class="col d-grid">
+                <span>Hosted By</span>
+                <span>Ted B</span>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam alias quis consequuntur voluptates est quidem ipsa nesciunt, perspiciatis neque culpa possimus! Consectetur vel, dignissimos in commodi fugiat laudantium quidem.</p>
         </div>
-        <div class="col">
-          <div class="box"></div>
+        <div class="col-5 reviews">
+          <div class="container">
+            <div class="row">
+               <div class="col-md-3"></div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <form>
+                        <div class="mb-3">
+                          <label class="form-label">Email</label>
+                          <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Password</label>
+                          <input type="password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3">Login</button>
+                      </form>
+                      <span><small>New to Airbnb? <a href="www.">Signup</a></small></span>
+                    </div>
+                </div>
+               <div class="col-md-3"></div>
+            </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid reviews">
-      <div class="row row-cols-1 gy-3">
-        <div class="col">
-          <div class="box"></div>
-        </div>
-      </div>
-    </div>
+    </div> 
   </body>
 </html>
+
+ <!-- <div class="box">
+            <h1 class="display-6"><strong>Luxury Villa Chaweng</strong></h1>
+            <span><small>Koh Samui</small></span> <span><small>•</small></span> <span><small>4 Rooms</small></span> -->
 
 
 <!-- <div class="container-fluid reviews">

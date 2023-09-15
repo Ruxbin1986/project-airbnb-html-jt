@@ -24,11 +24,28 @@
     </div>
       <div class="container">
         <div class="h4 pb-2 mb-4 bs-body-color border-bottom">Edit a House</div>
-        <input class="form-control" type="text" aria-label="default input example">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Short Title</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Description</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          <input type="number" placeholder="Max Price" class="Options">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Number of Rooms</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <label for="CitySelector" class="form-label">Location</label>
+        <select class="form-select" aria-label="Default select example" id="CitySelector">
+          <option>Koh Phangan</option>
+          <option>Koh Samui</option>
+          <option>Bali</option>
+        </select>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Price (per night)</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1">
+        </div>
           <div class="mb-3">
             <label class="form-label">Photos up to 9</label>
             <input type="text" class="form-control">
@@ -65,7 +82,7 @@
             <label class="form-label"></label>
             <input type="text" class="form-control">
           </div>
-        </div>
+          <button class="d-block btn btn-outline-success me-2" type="button">Save</button>
       </div>
   </body>
 </html>

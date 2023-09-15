@@ -10,54 +10,137 @@
       crossorigin="anonymous"
     />
     <style>
-      .mainPic {
-        width: 100%;
+
+      .box {
+        background-color: lightblue;
+        min-height: 100px;
+        border: 2px solid blue;
+      }
+
+      .gallery {
+        background-color: lightskyblue;
+        min-height: 100px;
+        border: 2px solid blue;
       }
       .content {
-        display: grid;
-        grid-template-columns: 50% auto 2%;
-        align-items: center;
-      }
-      .gallery {
-        margin: 0 0 0 10px;
-      }
-      .card img {
-        width: 200px;
-      }
-      nav {
-        background-color: pink;
+        background-color: lightpink;
+        min-height: 100px;
+        border: 2px solid red;
       }
 
-      .card {
+      .reviews {
+        background-color: lightgreen;
+        min-height: 100px;
+        border: 2px solid green;
       }
 
-      .houseInfo {
-        background-color: aqua;
-      }
-
-      .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .houseInfo {
-        background-color: coral;
-      }
-
-      .bookingForm {
-        background-color: cornflowerblue;
-      }
-
-      .bookingForm .card {
-        right: 0;
- position: absolute;
- padding: 0 20px 0 0 0;
+      .info {
+        background-color: lightgoldenrodyellow;
+        min-height: 100px;
+        border: 2px solid yellow;
       }
 
     </style>
   </head>
   <body>
-    <div class="wrap">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+      <img src="images/logo-airbnb.png" alt="Logo" width="100" class="d-inline-block align-text-top">
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-success me-2" type="button">Jimmy</button>
+        <button class="btn btn-outline-success me-2" type="button">Logout</button>
+      </form>
+    </div>
+  </nav>
+    <div class="container-fluid content"> 
+      <div class="row row-cols-2 gy-3">
+        <div class="col">
+          <div class="box">
+            <img src="images/house1/house_01_01.png" class="img-fluid" />
+          </div> 
+        </div>
+        <div class="col">
+          <div class="row row-cols-3 gy-3">
+            <div class="col">
+              <div class="gallery">
+                <img src="images/house1/house_01_01.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="gallery">
+                <img src="images/house1/house_01_02.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="gallery">
+                <img src="images/house1/house_01_03.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="gallery">
+                <img src="images/house1/house_01_04.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="gallery">
+                <img src="images/house1/house_01_05.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="gallery">
+                <img src="images/house1/house_01_06.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="gallery">
+                <img src="images/house1/house_01_07.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="gallery">
+                <img src="images/house1/house_01_08.png" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="gallery">
+                <img src="images/house1/house_01_09.png" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid info">
+      <div class="row row-cols-2 gy-3">
+        <div class="col">
+          <div class="box">
+            <h1 class="display-6">Luxury Villa Chaweng</h1>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid reviews">
+      <div class="row row-cols-1 gy-3">
+        <div class="col">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<!-- <div class="container-fluid reviews">
+  <div class="row row-cols-1 gy-3">
+    <div class="col">
+      <div class="box"></div>
+    </div> -->
+
+   <!-- <div class="wrap">
       <nav class="navbar bg-body-tertiary">
           <div class="container-fluid">
           <img src="images/logo-airbnb.png" alt="Logo" width="100" class="d-inline-block align-text-top">
@@ -138,11 +221,4 @@
               </div>
               <button class="btn btn-primary">Request Booking</button>
             </div>
-            <div class="Reviews">
-              
-            </div>
-          </div>
-        </div>
-    </div>
-  </body>
-</html>
+            <div class="Reviews"> -->

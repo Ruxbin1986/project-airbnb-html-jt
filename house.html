@@ -2,179 +2,184 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Airbnb - House Name</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <script src="https://kit.fontawesome.com/85625d8135.js" crossorigin="anonymous"></script>
-    <style>
-
-      .box {
-        background-color: lightblue;
-        min-height: 100px;
-        border: 2px solid blue;
-      }
-
-      .gallery {
-        background-color: lightskyblue;
-        min-height: 100px;
-        border: 2px solid blue;
-      }
-      .mycontent {
-        background-color: lightpink;
-        min-height: 100px;
-        border: 2px solid red;
-      }
-
-      .reviews {
-        background-color: lightgreen;
-        min-height: 100px;
-        border: 2px solid green;
-      }
-
-      .info {
-        background-color: lightgoldenrodyellow;
-        min-height: 100px;
-        border: 2px solid yellow;
-      }
-
-      .infoContent {
-        background-color: lightsalmon;
-        min-height: 100px;
-        border: 2px solid orange;
-      }
-
-    </style>
+    <title>Airbnb - House</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <script src="https://kit.fontawesome.com/f1e72de3fe.js"></script>
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="header">
-      <nav class="navbar navbartop bg-body-tertiary g-0">
-        <div class="container">
-          <img src="images/logo-airbnb.png" alt="Logo" width="100" class="d-inline align-text-top">
-          <form class="d-flex" role="search">
-            <button class="d-block btn btn-outline-success me-2" type="button">Jimmy</button>
-            <button class="d-block btn btn-outline-success" type="button">Logout</button>
-          </form>
-        </div>
-      </nav>
-    </div>
-    <!-- photo div -->
-    <div class=" mycontent ps-0"> 
-      <div class="row row-cols-2">
-        <div class="col m-0">
-          <div class="box">
-            <img src="images/house1/house_01_01.png" class="img-fluid" />
-          </div> 
-        </div>
-        <div class="col p-3">
-          <div class="row row-cols-3 g-5 p-5">
-            <div class="col">
-              <div class="gallery">
-                <img src="images/house1/house_01_01.png" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery">
-                <img src="images/house1/house_01_02.png" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery">
-                <img src="images/house1/house_01_03.png" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery">
-                <img src="images/house1/house_01_04.png" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery">
-                <img src="images/house1/house_01_05.png" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery">
-                <img src="images/house1/house_01_06.png" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery">
-                <img src="images/house1/house_01_07.png" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery">
-                <img src="images/house1/house_01_08.png" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="gallery">
-                <img src="images/house1/house_01_09.png" class="img-fluid" />
-              </div>
-            </div>
+    <!-- NAVBAR -->
+    <div class="navbar h-7 mx-5">
+      <!-- LOGO -->
+      <div class="container-fluid">
+        <img class="" style="width: 90px;" src="images/logo-airbnb.png">
+        <div class="d-flex">
+          <div class="d-flex btn btn-outline-dark align-items-center mx-1">
+            <img class="rounded-circle mx-1" style="width: 25px;" src="images/avatar.jpeg">
+            <div class="">Ted B</div>
+          </div>
+          <div class="">
+            <button type="button" class="btn btn-outline-dark">Logout</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- info/description/reviews -->
-    <div class="container-fluid info">
-      <div class="row row-cols-2">
-        <div class="col-7 reviews">
-          <h1 class="display-6 mb-0"><strong>Luxury Villa Chaweng</strong></h1>
-            <div class="mb-4">
-              <span><small>Koh Samui</small></span> <span><small>•</small></span> <span><small>4 Rooms</small></span>
-            </div>
-            <div class="row row-cols-2 mt-2">
-              <div class="col-2">
-                <img src="images/avatar.jpeg" class="rounded-circle" style="width: 75px;" />
-              </div>
-              <div class="col d-grid mb-5">
-                <span>Hosted By</span>
-                <span>Ted B</span>
-              </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam alias quis consequuntur voluptates est quidem ipsa nesciunt, perspiciatis neque culpa possimus! Consectetur vel, dignissimos in commodi fugiat laudantium quidem.</p>
-            <form> 
-              <div class="mb-3 d-grid">
-                <h2 class="display-5 mt-5"><strong>0 Reviews</strong></h1>
-              <span>Leave a review</span>
-            </div>
-            <textarea class="form-control" rows="5"></textarea>
-            <div class="mb-3 d-grid">
-              <div class="mt-3">
-                <i class="fa-solid fa-thumbs-up fa-lg" style="color: #119400;"></i>
-                <i class="fa-solid fa-thumbs-down fa-lg" style="color: #e00000;"></i>    
-              </div>   
-              <button type="submit" class="btn btn-success mb-3 mt-3" style="width: 100px;">Submit</button>
-            </div>
-          </form>
+    <!-- MAIN IMAGE -->
+    <div class="">
+      <div class="row">
+        <div class="col p-0">
+          <img style="width: 100%; height: 100%;" src="images/house1/house_01_01.png"/>
         </div>
-        <div class="col-5 reviews">
-          <div class="card" style="width: 300px;">
-            <div class="card-body">
-              <form>
-                <div class="mb-3 d-grid">
-                  <span>350/night</span>
-                  <span>0 Reviews</span>
-                </div>
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, sint ullam ipsam consequuntur sit et perferendis magnam qui reiciendis deserunt asperiores quod vitae neque quisquam earum beatae harum odio omnis!
-                  </p>
-                </div>
-                <div class="mb-3">
-                  <textarea class="form-control" rows="5" placeholder="Send the host a message..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-success mb-3">Request Booking</button>
-              </form>
+        <!-- GALLERY -->
+        <div class="col">
+            <div class="row row-cols-3 p-5 g-5">
+              <div class="col">
+                <img style="width: 100%" src="images/house1/house_01_01.png"/>
+              </div>
+              <div class="col">
+                <img style="width: 100%" src="images/house1/house_01_02.png"/>
+              </div>
+              <div class="col">
+                <img style="width: 100%" src="images/house1/house_01_03.png"/>
+              </div>
+              <div class="col">
+                <img style="width: 100%" src="images/house1/house_01_04.png"/>
+              </div>
+              <div class="col">
+                <img style="width: 100%" src="images/house1/house_01_05.png"/>
+              </div>
+              <div class="col">
+                <img style="width: 100%" src="images/house1/house_01_06.png"/>
+              </div>
+              <div class="col">
+                <img style="width: 100%" src="images/house1/house_01_07.png"/>
+              </div>
+              <div class="col">
+                <img style="width: 100%" src="images/house1/house_01_08.png"/>
+              </div>
+              <div class="col">
+                <img style="width: 100%" src="images/house1/house_01_09.png"/>
+              </div>
             </div>
         </div>
       </div>
-    </div> 
+    </div>
+    <!-- INFO  SECTION -->
+    <div class="container p-2 my-4">
+      <div class="row">
+        <div class="col-9 p-0">
+          <div class="container">
+            <div class="row me-5">
+              <!-- HOUSE INFO -->
+              <div class="col-10 p-0">
+                <h2 class="mb-0
+                ">Luxury Villa Cha Weng</h2>
+                <div class="col">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span><small>Koh Samui</small></span> • <span><small>4 rooms</small></span>
+                </div>
+                <!-- HOST INFO -->
+                <div class="container my-4 p-0">
+                  <div class="row">
+                    <div class="col-1 pe-0">
+                        <img class="rounded-circle my-1" style="width: 40px;" src="images/avatar.jpeg">
+                    </div>
+                    <div class="col p-0">
+                      <small class="fw-lighter">Hosted by<br></small>
+                      <span>Ted B</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- HOUSE DESCRIPTION -->
+                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem qui voluptates iste quos dolorum sit autem aperiam necessitatibus quod cumque, voluptatem ad fuga unde adipisci consequatur in aliquid ex!</p>
+              </div>
+              <!-- REVIEWS EMPTY -->
+              <div class="col-10 mt-5 p-0">
+                <h3>Reviews</h3>
+                <small>Leave a review</small>
+                <div class="form-floating">
+                  <textarea class="form-control py-2" id="floatingTextarea2" style="height: 100px"></textarea>
+                </div>
+                <form class="mt-1">
+                  <button class="btn btn-light fa-solid fa-thumbs-up btn-outline-success" type="button" style="color: #198754;"></button>
+                  <button class="btn btn-light fa-solid fa-thumbs-down btn-outline-danger" type="button" style="color: #e17575;"></button>
+                  <div class="mt-1">
+                    <input class="btn btn-success" type="button" value="Submit">
+                  </div>
+                </form>
+              </div>
+              <!-- REVIEWS POP -->
+              <!-- <div class="col-10 mt-5 p-0">
+                <div class="container">
+                  <div class="row mb-3">
+                    <div class="card p-1">
+                      <div class="card-body p-1">
+                        <div class="row">
+                          <div class="col-1 pe-0">
+                              <img class="rounded-circle my-1" style="width: 40px;" src="https://randomuser.me/api/portraits/men/11.jpg">
+                          </div>
+                          <div class="col-10 ps-2">
+                            <small class="fw-lighter">25 Dec 1932 - 12:12<br></small>
+                            <span>Potato Head</span>
+                          </div>
+                          <div class="col-1 position-relative">
+                            <i class="fa-solid fa-thumbs-up position-absolute top-0 end-1" style="color: #197d54;"></i>
+                          </div>
+                        </div>
+                        <p class="card-text ms-5 mb-1 pt-2 ps-2">Po-ta-toes! Boil em, mash em, stick em in a stew! Po-ta-toes! Boil em, mash em, stick em in a stew! Po-ta-toes! Boil em, mash em, stick em in a stew! Po-ta-toes! Boil em, mash em, stick em in a stew! Po-ta-toes! Boil em, mash em, stick em in a stew!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="card p-1">
+                      <div class="card-body p-1">
+                        <div class="row">
+                          <div class="col-1 pe-0">
+                              <img class="rounded-circle my-1" style="width: 40px;" src="images/men/11.jpg">
+                          </div>
+                          <div class="col-10 ps-2">
+                            <small class="fw-lighter">25 Dec 1932 - 12:12<br></small>
+                            <span>Ted B</span>
+                          </div>
+                          <div class="col-1 position-relative">
+                            <i class="fa-solid fa-thumbs-up position-absolute top-0 end-1" style="color: #197d54;"></i>
+                          </div>
+                        </div>
+                        <p class="card-text ms-5 mb-1 pt-2 ps-2">Po-ta-toes! Boil em, mash em, stick em in a stew! Po-ta-toes! Boil em, mash em, stick em in a stew! Po-ta-toes! Boil em, mash em, stick em in a stew! Po-ta-toes! Boil em, mash em, stick em in a stew! Po-ta-toes! Boil em, mash em, stick em in a stew!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+          <!-- BOOKING SECTION -->
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">£700/night</h4>
+              <div class="col mb-4">
+                <i class="fa-solid fa-thumbs-up" style="color: #197d54;"></i>
+                <small>Reviews</small>
+              </div>
+              <!-- UNBOOKED -->
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Send the host a message" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2"></label>
+              </div>
+              <button type="button" class="btn btn-success btn-sm mt-3">Request Booking</button>
+              <!-- BOOKED -->
+              <!-- <div class="card border-success bg-success-subtle">
+                <div class="card-body p-2 text-success">
+                  <span class="card-text">Thank you for your enquiry.<br></span>
+                  <small class="card-text">Sent on 25 Dec 1932 - 12:12</small>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+    </div>
+
   </body>
 </html>
